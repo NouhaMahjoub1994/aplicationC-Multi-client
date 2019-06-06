@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.1 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkWindow" id="principale">
+    <property name="can_focus">False</property>
+    <property name="default_width">517</property>
+    <property name="default_height">534</property>
+    <signal name="delete-event" handler="fermer" swapped="no"/>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="width_request">86</property>
+            <property name="height_request">24</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Serveur</property>
+          </object>
+          <packing>
+            <property name="x">45</property>
+            <property name="y">65</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="adrServer">
+            <property name="width_request">100</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="margin_bottom">120</property>
+          </object>
+          <packing>
+            <property name="x">143</property>
+            <property name="y">62</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width_request">100</property>
+            <property name="height_request">37</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Port</property>
+          </object>
+          <packing>
+            <property name="x">40</property>
+            <property name="y">91</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="numPort">
+            <property name="width_request">100</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+          </object>
+          <packing>
+            <property name="x">144</property>
+            <property name="y">97</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width_request">100</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Fichier</property>
+          </object>
+          <packing>
+            <property name="x">39</property>
+            <property name="y">136</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="nomFichier">
+            <property name="width_request">100</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+          </object>
+          <packing>
+            <property name="x">144</property>
+            <property name="y">134</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="btnEnvoyer">
+            <property name="label" translatable="yes">Envoyer</property>
+            <property name="width_request">100</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="envoyer" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">157</property>
+            <property name="y">196</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkTextView" id="zoneAffichage">
+            <property name="width_request">386</property>
+            <property name="height_request">136</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+          </object>
+          <packing>
+            <property name="x">41</property>
+            <property name="y">253</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
